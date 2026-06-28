@@ -2,7 +2,7 @@
 
 > AI Engineer · Full-Stack Developer · LLM Systems · RAG Pipelines · Agentic AI
 
-**Live:** [portfolio-shahzadakbar369.vercel.app](https://portfolio-shahzadakbar369.vercel.app) *(update after deploy)*  
+**Portfolio:** [https://portfolio-zeta-lovat-bjxxhxljlf.vercel.app/](https://portfolio-zeta-lovat-bjxxhxljlf.vercel.app/)  
 **Email:** shahzadakbar369@gmail.com  
 **LinkedIn:** [linkedin.com/in/shahzadakbar369](https://linkedin.com/in/shahzadakbar369)  
 **GitHub:** [github.com/shahzadakbar369](https://github.com/shahzadakbar369)
