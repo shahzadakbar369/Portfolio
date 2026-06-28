@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahzad Akbar | AI Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════════ -->
+<nav id="navbar">
+    <div class="nav-inner">
+        <!-- Logo: swap text for image once file is in place -->
+        <a href="#hero" class="nav-logo">
+            <img src="assets/images/shahzad_logo.png" alt="Shahzad Akbar logo"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+            </a>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#who"        class="nav-link">Who I Am</a>
+            <a href="#skills"     class="nav-link">Skills</a>
+            <a href="#projects"   class="nav-link">Projects</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#certifications" class="nav-link">Certifications</a>
+            <a href="#contact"    class="nav-link">Contact</a>
+            <!-- Resume button — opens PDF in a new tab -->
+            <a href="assets/images/Resume_Shahzad_Akbar.pdf"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="nav-resume">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                </svg>
+                Resume
+            </a>
+            <a href="#contact" class="nav-cta">Hire Me</a>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+    <div id="mobileMenu">
+        <a href="#who"        class="nav-link" onclick="closeMenu()">Who I Am</a>
+        <a href="#skills"     class="nav-link" onclick="closeMenu()">Skills</a>
+        <a href="#projects"   class="nav-link" onclick="closeMenu()">Projects</a>
+        <a href="#experience" class="nav-link" onclick="closeMenu()">Experience</a>
+        <a href="#contact"    class="nav-link" onclick="closeMenu()">Contact</a>
+        <a href="assets/images/Resume_Shahzad_Akbar.pdf" target="_blank" class="nav-link" onclick="closeMenu()">Resume ↗</a>
+    </div>
+</nav>
+
+
+<!-- ════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+<section id="hero">
+    <div class="hero-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="hero-content">
+        <div>
+            <div class="hero-tag">
+                <span class="dot"></span>
+                Available for junior roles
+            </div>
+            <h1 class="hero-name">
+                Muhammad<br>
+                <span class="highlight">Shahzad Akbar</span>
+            </h1>
+            <p class="hero-subtitle">
+                AI Engineer and Full-Stack Developer. I build end-to-end LLM systems -
+                agentic pipelines, RAG architectures, and the backends that power them.
+                Based in Lahore.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn-primary">
+                    View Projects
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+                    </svg>
+                </a>
+                <a href="mailto:shahzadakbar369@gmail.com" class="btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+
+        <div class="terminal">
+            <div class="terminal-bar">
+                <div class="terminal-dot" style="background:#ff5f57"></div>
+                <div class="terminal-dot" style="background:#febc2e"></div>
+                <div class="terminal-dot" style="background:#28c840"></div>
+                <span class="terminal-title">shahzad.json</span>
+            </div>
+            <div class="terminal-body">
+                <span class="t-line"><span class="t-cmd">{</span></span>
+                <span class="t-line">&nbsp;&nbsp;<span class="t-key">"role"</span>: <span class="t-val">"AI Engineer"</span>,</span>
+                <span class="t-line">&nbsp;&nbsp;<span class="t-key">"stack"</span>: [<span class="t-val">"LLM"</span>, <span class="t-val">"FastAPI"</span>, <span class="t-val">"React"</span>],</span>
+                <span class="t-line">&nbsp;&nbsp;<span class="t-key">"specialty"</span>: <span class="t-val">"Agentic AI / RAG"</span>,</span>
+                <span class="t-line">&nbsp;&nbsp;<span class="t-key">"degree"</span>: <span class="t-val">"BSCS @ GCU Lahore"</span>,</span>
+                <span class="t-line">&nbsp;&nbsp;<span class="t-key">"open_to_work"</span>: <span class="t-val">true</span>,</span>
+                <span class="t-line">&nbsp;&nbsp;<span class="t-key">"remote"</span>: <span class="t-val">true</span></span>
+                <span class="t-line"><span class="t-cmd">}</span><span class="cursor"></span></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     WHO I AM
+════════════════════════════════════════════ -->
+<section id="who" style="background: var(--bg-secondary);">
+    <div class="section-inner">
+        <div class="about-grid">
+            <div class="reveal">
+                <span class="section-eyebrow">Who I Am</span>
+                <h2 class="section-title">Transforming ideas into<br><span style="color:var(--accent-2)">intelligent systems.</span></h2>
+
+                <!-- Cover-letter style intro block -->
+                <div class="who-intro">
+                    <span class="who-intro-icon">👋</span>
+                    <p>
+                        I'm <strong>Muhammad Shahzad Akbar</strong>, a BSCS graduate from
+                        <strong>Government College University, Lahore</strong>. I have a strong interest in
+                        <strong>Python, Artificial Intelligence, and Full-Stack Development</strong>.
+                        During my academic journey I worked on several projects that pushed me from
+                        coursework into real product engineering.
+                    </p>
+                </div>
+
+                <div class="about-extra">
+                    <p>
+                        My Final Year Project was <strong style="color:var(--accent-2)">AIRA</strong> -
+                        Artificially Intelligent Recruitment Assistant - where I owned the complete AI layer:
+                        CV parsing, semantic job matching, an MCQ generator, and a speech-enabled AI interview
+                        agent powered by Groq LLaMA 3.3 70B.
+                    </p>
+                    <p>
+                        Since graduation I've been building independently. Currently working on
+                        <strong style="color:var(--accent-2)">RAG-based projects</strong> and
+                        <strong style="color:var(--accent-2)">Generative AI multi-agent systems</strong> -
+                        shipping things that go beyond demos and into structured, production-grade architectures.
+                    </p>
+                    <p>
+                        I'm comfortable across the full AI-to-backend boundary and actively looking for
+                        junior AI engineering and full-stack roles. Open to remote.
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-right reveal" style="transition-delay: 0.15s;">
+
+                <!-- Photo -->
+                <img src="assets/images/Shahzad.png" alt="Shahzad Akbar"
+                    onerror="this.style.display='none'"
+                    style="width:400px;height:400px;border-radius:50%;object-fit:cover;
+                            object-position:center top;border:3px solid var(--accent);
+                            box-shadow:0 0 35px rgba(124,106,247,0.3);">
+
+                <!-- Stats -->
+                <div class="stats-grid" style="width:100%;">
+                    <div class="stat-card">
+                        <span class="stat-num">3</span>
+                        <span class="stat-label">AI Projects Shipped</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">5</span>
+                        <span class="stat-label">LLM Agents Built</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">2</span>
+                        <span class="stat-label">Internships</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num">6+</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     SKILLS
+════════════════════════════════════════════ -->
+<section id="skills">
+    <div class="section-inner">
+        <div class="reveal">
+            <span class="section-eyebrow">Technical Skills</span>
+            <h2 class="section-title">What I work with</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card reveal" style="transition-delay: 0.05s;">
+                <div class="skill-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+                    </svg>
+                </div>
+                <div class="skill-category">AI / LLM</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Groq SDK</span>
+                    <span class="skill-tag">LLaMA 3.3 70B</span>
+                    <span class="skill-tag">RAG Pipelines</span>
+                    <span class="skill-tag">FAISS</span>
+                    <span class="skill-tag">Prompt Engineering</span>
+                    <span class="skill-tag">Agentic AI</span>
+                    <span class="skill-tag">Multi-Agent</span>
+                    <span class="skill-tag">Semantic Search</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal" style="transition-delay: 0.1s;">
+                <div class="skill-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/>
+                    </svg>
+                </div>
+                <div class="skill-category">Backend</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">FastAPI</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Express.js</span>
+                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">JWT</span>
+                    <span class="skill-tag">Swagger/OpenAPI</span>
+                    <span class="skill-tag">NestJS</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal" style="transition-delay: 0.15s;">
+                <div class="skill-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+                    </svg>
+                </div>
+                <div class="skill-category">Frontend</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">React.js</span>
+                    <span class="skill-tag">Next.js</span>
+                    <span class="skill-tag">Vite</span>
+                    <span class="skill-tag">Tailwind CSS</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal" style="transition-delay: 0.2s;">
+                <div class="skill-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                    </svg>
+                </div>
+                <div class="skill-category">Databases</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">MongoDB Atlas</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                    <span class="skill-tag">MySQL</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal" style="transition-delay: 0.25s;">
+                <div class="skill-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/>
+                    </svg>
+                </div>
+                <div class="skill-category">Languages</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">C++</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal" style="transition-delay: 0.3s;">
+                <div class="skill-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                    </svg>
+                </div>
+                <div class="skill-category">Tools</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git / GitHub</span>
+                    <span class="skill-tag">Postman</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Tesseract OCR</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     PROJECTS
+════════════════════════════════════════════ -->
+<section id="projects" style="background: var(--bg-secondary);">
+    <div class="section-inner">
+        <div class="reveal">
+            <span class="section-eyebrow">Projects</span>
+            <h2 class="section-title">Things I've built</h2>
+        </div>
+        <div class="projects-grid">
+
+            <!-- ── AIRA (Featured / wide) ── -->
+            <div class="project-card featured reveal" style="transition-delay: 0.05s;">
+                <div class="project-visual">
+                    <!--
+                        Place AIRA.png in assets/images/ — the img tag below will pick it up.
+                        If the file is missing the fallback SVG renders instead.
+                    -->
+                    <img src="assets/images/AIRA.png"
+                         alt="AIRA - AI Recruitment Platform screenshot"
+                         class="project-img"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="project-visual-fallback" style="display:none;">
+                        <div class="pv-glow pv-glow-purple"></div>
+                        <svg width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="3" fill="rgba(124,106,247,0.15)" stroke="rgba(124,106,247,0.6)" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    <div class="project-badge">FYP · GCU Lahore</div>
+                </div>
+                <div class="project-content">
+                    <div class="project-title">AIRA - AI Recruitment Platform</div>
+                    <p class="project-desc">
+                        A 3-role recruitment platform where I owned the entire AI layer. Built a CV parser,
+                        semantic job matcher, MCQ generator, and a speech-enabled interview agent using Groq
+                        LLaMA 3.3 70B. Candidates are auto-scored and shortlisted based on resume analysis
+                        and live interview performance. 15 DB entities, 5-chapter thesis, 40 test cases.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Groq SDK</span>
+                        <span class="tech-tag">LLaMA 3.3 70B</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">JWT</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/shehr519/AIRA-FYP" target="_blank" class="p-link p-link-primary">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── AI Software House Agent ── -->
+            <div class="project-card reveal" style="transition-delay: 0.1s;">
+                <div class="project-visual">
+                    <img src="assets/images/AI-SOFTWARE-HOUSE-AGENT.png"
+                         alt="AI Software House Agent screenshot"
+                         class="project-img"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="project-visual-fallback" style="display:none; background: linear-gradient(135deg, #0e1218, #0c1a22);">
+                        <div class="pv-glow pv-glow-blue"></div>
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <path d="M7 8h10M7 12h6"/>
+                        </svg>
+                    </div>
+                    <div class="project-badge">Multi-Agent</div>
+                </div>
+                <div class="project-content">
+                    <div class="project-title">AI Software House Agent</div>
+                    <p class="project-desc">
+                        Feed it a plain-English software idea - it returns a full project package.
+                        Five sequential specialist LLM agents handle business analysis, system architecture,
+                        project plan, cost estimate, and code scaffolding. Each agent's structured output
+                        feeds the next.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">React 19</span>
+                        <span class="tech-tag">Vite</span>
+                        <span class="tech-tag">Groq SDK</span>
+                        <span class="tech-tag">Multi-Agent</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/shahzadakbar369/AI-Software-House-Agent" target="_blank" class="p-link p-link-primary">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── AI PDF Chatbot ── -->
+            <div class="project-card reveal" style="transition-delay: 0.15s;">
+                <div class="project-visual">
+                    <img src="assets/images/AI-PDF-CHATBOT.png"
+                         alt="AI PDF Chatbot Assistant screenshot"
+                         class="project-img"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="project-visual-fallback" style="display:none; background: linear-gradient(135deg, #130d1a, #1a0d15);">
+                        <div class="pv-glow pv-glow-pink"></div>
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.8">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                        </svg>
+                    </div>
+                    <div class="project-badge">RAG</div>
+                </div>
+                <div class="project-content">
+                    <div class="project-title">AI PDF Chatbot Assistant</div>
+                    <p class="project-desc">
+                        Production-structured RAG system - chat with any PDF, including scanned pages via
+                        Tesseract OCR. FAISS vector search, 8 RESTful endpoints, session-based chat history
+                        in MongoDB Atlas. Includes similarity threshold tuning for short documents.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FAISS</span>
+                        <span class="tech-tag">Groq SDK</span>
+                        <span class="tech-tag">Tesseract OCR</span>
+                        <span class="tech-tag">MongoDB Atlas</span>
+                        <span class="tech-tag">React</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/shahzadakbar369/AI-PDF-Chatbot-Assistant" target="_blank" class="p-link p-link-primary">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     EXPERIENCE
+════════════════════════════════════════════ -->
+<section id="experience">
+    <div class="section-inner">
+        <div class="reveal">
+            <span class="section-eyebrow">Experience</span>
+            <h2 class="section-title">Where I've worked</h2>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item reveal" style="transition-delay: 0.1s;">
+                <div class="tl-header">
+                    <span class="tl-role">MERN Stack Intern</span>
+                    <span class="tl-date">Jan 2026 - Feb 2026</span>
+                </div>
+                <div class="tl-company">CodeUpScale, Lahore</div>
+                <ul class="tl-bullets">
+                    <li>Received hands-on mentorship on production-grade MERN stack development practices from an industry professional.</li>
+                    <li>Worked with Next.js and NestJS on real company projects, gaining exposure to enterprise-level architecture patterns.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item reveal" style="transition-delay: 0.2s;">
+                <div class="tl-header">
+                    <span class="tl-role">Web Development Intern</span>
+                    <span class="tl-date">Jun 2022 - Jul 2022</span>
+                </div>
+                <div class="tl-company">KOT Enterprises Pvt. Ltd., Lahore</div>
+                <ul class="tl-bullets">
+                    <li>Led a team on website design, content, and prototyping deliverables for a live client project.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+    <div class="section-inner">
+        <div class="reveal">
+            <span class="section-eyebrow">Credentials</span>
+            <h2 class="section-title">Certifications</h2>
+        </div>
+        <div class="cert-grid">
+
+            <div class="cert-card reveal" style="transition-delay:0.05s;">
+                <div class="cert-img-wrap" onclick="openLightbox('assets/images/Claude101.png')">
+                    <img src="assets/images/Claude101.png" alt="Claude 101"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                    <div class="cert-img-fallback" style="display:none;">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                        <span>Claude101.png</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <div class="cert-title">Certificate of Completion - Claude 101</div>
+                    <div class="cert-issuer">Anthropic</div>
+                    <div class="cert-date">June 2026</div>
+                </div>
+            </div>
+
+            <div class="cert-card reveal" style="transition-delay:0.1s;">
+                <div class="cert-img-wrap" onclick="openLightbox('assets/images/NAVTTC.png')">
+                    <img src="assets/images/NAVTTC.png" alt="NAVTTC"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                    <div class="cert-img-fallback" style="display:none;">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                        <span>NAVTTC.png</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <div class="cert-title">Certified in IT</div>
+                    <div class="cert-issuer">NAVTTC</div>
+                    <div class="cert-date">September 2022</div>
+                </div>
+            </div>
+
+            <div class="cert-card reveal" style="transition-delay:0.15s;">
+                <div class="cert-img-wrap" onclick="openLightbox('assets/images/RELO-English-Works.png')">
+                    <img src="assets/images/RELO-English-Works.png" alt="RELO"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                    <div class="cert-img-fallback" style="display:none;">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                        <span>RELO-English-Works.png</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <div class="cert-title">Spoken English</div>
+                    <div class="cert-issuer">RELO - Regional English Language Office (US PUAN)</div>
+                    <div class="cert-date">February 2022</div>
+                </div>
+            </div>
+
+            <div class="cert-card reveal" style="transition-delay:0.2s;">
+                <div class="cert-img-wrap" onclick="openLightbox('assets/images/Foster-Flagship.png')">
+                    <img src="assets/images/Foster-Flagship.png" alt="Foster Flagship"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                    <div class="cert-img-fallback" style="display:none;">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                        <span>Foster-Flagship.png</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <div class="cert-title">Foster Flagship Training Program</div>
+                    <div class="cert-issuer">Foster Learning Pakistan</div>
+                    <div class="cert-date">March 2023</div>
+                </div>
+            </div>
+
+            <div class="cert-card reveal" style="transition-delay:0.25s;">
+                <div class="cert-img-wrap" onclick="openLightbox('assets/images/OPEN-MOOC.png')">
+                    <img src="assets/images/OPEN-MOOC.png" alt="OPEN MOOC"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                    <div class="cert-img-fallback" style="display:none;">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                        <span>OPEN-MOOC.png</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <div class="cert-title">OPEN MOOC</div>
+                    <div class="cert-issuer">US Dept. of State / Online Professional English Network</div>
+                    <div class="cert-date">January 2022</div>
+                </div>
+            </div>
+
+            <div class="cert-card reveal" style="transition-delay:0.3s;">
+                <div class="cert-img-wrap" onclick="openLightbox('assets/images/Akhuwat-e-Parwaaz.png')">
+                    <img src="assets/images/Akhuwat-e-Parwaaz.png" alt="Taleem Mumkin"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                    <div class="cert-img-fallback" style="display:none;">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                        <span>Akhuwat-e-Parwaaz.png</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <div class="cert-title">Taleem Mumkin</div>
+                    <div class="cert-issuer">Qasim Ali Shah Foundation / Akhuwat-e-Parwaaz</div>
+                    <div class="cert-date">December 2024</div>
+                </div>
+            </div>
+
+            <div class="cert-card reveal" style="transition-delay:0.35s;">
+                <div class="cert-img-wrap" onclick="openLightbox('assets/images/Bazm-e-Paigham.png')">
+                    <img src="assets/images/Bazm-e-Paigham.png" alt="Bazm-e-Paigham"
+                         onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+                    <div class="cert-img-fallback" style="display:none;">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                        <span>Bazm-e-Paigham.png</span>
+                    </div>
+                </div>
+                <div class="cert-body">
+                    <div class="cert-title">Bazm-e-Paigham</div>
+                    <div class="cert-issuer">Certificate of Participation</div>
+                    <div class="cert-date">—</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-close" onclick="closeLightbox()">✕</div>
+    <img id="lightboxImg" src="" alt="Certificate fullscreen">
+</div>
+
+
+<!-- ════════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════ -->
+<section id="contact" style="background: var(--bg-secondary);">
+    <div class="section-inner">
+        <div class="contact-grid">
+            <div class="reveal">
+                <span class="section-eyebrow">Get in Touch</span>
+                <h2 class="section-title">Let's work<br>together.</h2>
+                <p class="contact-desc">
+                    I'm actively looking for junior AI engineering and full-stack roles.
+                    Open to remote. If you have a project or position in mind, reach out directly.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:shahzadakbar369@gmail.com" class="c-link">
+                        <div class="c-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <span class="c-text">shahzadakbar369@gmail.com</span>
+                    </a>
+                    <a href="https://github.com/shahzadakbar369" target="_blank" class="c-link">
+                        <div class="c-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                        </div>
+                        <span class="c-text">github.com/shahzadakbar369</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shahzadakbar369/" target="_blank" class="c-link">
+                        <div class="c-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </div>
+                        <span class="c-text">linkedin.com/in/shahzadakbar369</span>
+                    </a>
+                    <a href="tel:+923204505193" class="c-link">
+                        <div class="c-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <span class="c-text">+92 320 450 5193</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="reveal" style="transition-delay: 0.15s;">
+                <div class="form-group">
+                    <label class="form-label" for="name">Name</label>
+                    <input type="text" id="name" class="form-input" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Email</label>
+                    <input type="email" id="email" class="form-input" placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea id="message" rows="5" class="form-input" placeholder="Tell me about the role or project..."></textarea>
+                </div>
+                <button class="btn-primary" style="width:100%;justify-content:center;" onclick="handleContact()">
+                    Send Message
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     FAQ
+════════════════════════════════════════════ -->
+<section id="faq">
+    <div class="section-inner">
+        <div class="reveal">
+            <span class="section-eyebrow">FAQ</span>
+            <h2 class="section-title">Common questions</h2>
+        </div>
+        <div class="faq-grid">
+
+            <div class="faq-item reveal" style="transition-delay: 0.05s;">
+                <button class="faq-question">
+                    What kind of roles are you looking for?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Junior AI Engineer and Full-Stack Developer roles - primarily. I'm also open to AI Evaluation Specialist and Backend Engineer positions. Remote is fine and preferred; Lahore-based is also good.</p>
+                </div>
+            </div>
+
+            <div class="faq-item reveal" style="transition-delay: 0.1s;">
+                <button class="faq-question">
+                    What's your primary tech stack right now?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Python + FastAPI on the AI/backend side, with Groq SDK and LLaMA 3.3 70B for LLM work. On the frontend it's React with Vite. For databases I use MongoDB Atlas most frequently alongside FAISS for vector search. Node.js/Express is familiar territory too from MERN projects.</p>
+                </div>
+            </div>
+
+            <div class="faq-item reveal" style="transition-delay: 0.15s;">
+                <button class="faq-question">
+                    What was your exact contribution to AIRA?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>I owned the entire AI layer. That meant the CV parser, semantic job matcher, MCQ generator, the speech-enabled interview agent (Groq LLaMA 3.3 70B), post-interview feedback reports with skill radar charts, and the AIRA chatbot present on every page. The scoring pipeline - combining resume analysis with interview performance - was also my design. My teammates handled the frontend (Sheherbano) and backend (Fakhar Fazilat).</p>
+                </div>
+            </div>
+
+            <div class="faq-item reveal" style="transition-delay: 0.2s;">
+                <button class="faq-question">
+                    Are you available for freelance or contract work?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, open to short-term contracts and freelance projects - particularly anything involving LLM integration, RAG systems, FastAPI backends, or full-stack builds. Reach out with specifics and we can talk scope and timeline.</p>
+                </div>
+            </div>
+
+            <div class="faq-item reveal" style="transition-delay: 0.25s;">
+                <button class="faq-question">
+                    Do you have a degree? What's your educational background?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>BSCS from Government College University (GCU), Lahore - completed May 2026. Relevant coursework includes AI, Data Structures and Algorithms, OOP, Database Systems, Operating Systems, Software Engineering, and Computer Networks.</p>
+                </div>
+            </div>
+
+            <div class="faq-item reveal" style="transition-delay: 0.3s;">
+                <button class="faq-question">
+                    Can you work with non-technical teams or clients?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes. Part of building AIRA was translating complex AI behaviour into something a recruiter or HR team could use without knowing what an LLM is. I'm used to making technical decisions legible to people who don't share the same context - that's just good product engineering.</p>
+                </div>
+            </div>
+
+            <div class="faq-item reveal" style="transition-delay: 0.35s;">
+                <button class="faq-question">
+                    What are you currently building or learning?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Currently focused on RAG-based systems and Generative AI multi-agent architectures - building things that go beyond demos into production-structured, deployable applications. Also deepening work with vector databases and LLM evaluation methods.</p>
+                </div>
+            </div>
+
+            <div class="faq-item reveal" style="transition-delay: 0.4s;">
+                <button class="faq-question">
+                    What's the best way to contact you?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Email is fastest - shahzadakbar369@gmail.com. LinkedIn works too. If you have something specific in mind, use the contact form above and give me context about the role or project - I'll respond within 24 hours.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer>
+    <p>Designed &amp; Built by Shahzad Akbar &mdash; <a href="mailto:shahzadakbar369@gmail.com">shahzadakbar369@gmail.com</a></p>
+    <p style="margin-top: 0.4rem; color: var(--fg-dim); font-size: 0.72rem;">BSCS · Government College University, Lahore · 2026</p>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
