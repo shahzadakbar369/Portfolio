@@ -87,12 +87,6 @@ nav {
     object-fit: contain;
     border-radius: 8px;     /* optional: softens hard edges */
 }
-.nav-logo-text {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.85rem;
-    color: var(--accent-2);
-    letter-spacing: 0.05em;
-}
 .nav-links { display: flex; gap: 1.75rem; align-items: center; }
 .nav-link {
     color: var(--fg-muted);
@@ -504,12 +498,18 @@ section { padding: 7rem 2rem 4rem; position: relative; }
     overflow: hidden;
 }
 .project-card.featured .project-visual { height: auto; min-height: 280px; }
+.project-visual--illustration {
+    height: auto;
+    aspect-ratio: 3 / 2;
+}
 .project-img {
     width: 100%; height: 100%;
     object-fit: cover;
     transition: transform 0.4s ease;
 }
 .project-card:hover .project-img { transform: scale(1.04); }
+.project-visual--illustration .project-img { object-fit: contain; }
+.project-card:hover .project-visual--illustration .project-img { transform: none; }
 .project-visual-fallback {
     position: absolute; inset: 0;
     display: flex;

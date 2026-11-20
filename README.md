@@ -22,6 +22,8 @@ Sections: Hero · Who I Am · Skills · Projects · Experience · Certifications
 | Project | Stack | Link |
 |---|---|---|
 | **AIRA** - AI Recruitment Platform (FYP) | React, Node.js, Express, MongoDB, Groq LLaMA 3.3 70B | [GitHub](https://github.com/shehr519/AIRA-FYP) |
+| **CodeForge AI** - PHP-to-Python migration capstone (in development) | Python, FastAPI, React | [GitHub](https://github.com/shahzadakbar369/codeforge-ai/) |
+| **NETSOL Internship Chatbot** - Team prototype | JWT, Redis, Kafka, Grafana | — |
 | **AI Software House Agent** - Multi-agent pipeline | FastAPI, Python, React 19, Groq SDK | [GitHub](https://github.com/shahzadakbar369/AI-Software-House-Agent) |
 | **AI PDF Chatbot Assistant** - Full-stack RAG | FastAPI, FAISS, Tesseract OCR, MongoDB Atlas, React | [GitHub](https://github.com/shahzadakbar369/AI-PDF-Chatbot-Assistant) |
 
@@ -41,6 +43,8 @@ Portfolio/
 │   └── images/
 │       ├── shahzad_logo.png
 │       ├── Shahzad.png
+│       ├── CODEFORGE-AI.png
+│       ├── NETSOL-CHATBOT.png
 │       ├── AIRA.png
 │       ├── AI-PDF-CHATBOT.png
 │       ├── AI-SOFTWARE-HOUSE-AGENT.png
