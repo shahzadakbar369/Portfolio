@@ -738,6 +738,7 @@ textarea.form-input { resize: none; }
 .faq-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    align-items: start;
     gap: 1rem;
     margin-top: 3rem;
 }
