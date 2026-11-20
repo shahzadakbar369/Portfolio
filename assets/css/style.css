@@ -728,6 +728,11 @@ section { padding: 7rem 2rem 4rem; position: relative; }
 .form-input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-glow); }
 .form-input::placeholder { color: var(--fg-dim); }
 textarea.form-input { resize: none; }
+.contact-note {
+    margin-top: 0.5rem;
+    color: var(--fg-muted);
+    font-size: 0.8rem;
+}
 
 /* ── FAQ ── */
 .faq-grid {

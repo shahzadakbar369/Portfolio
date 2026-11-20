@@ -719,12 +719,13 @@
                     <label class="form-label" for="message">Message</label>
                     <textarea id="message" rows="5" class="form-input" placeholder="Tell me about the role or project..."></textarea>
                 </div>
-                <button class="btn-primary" style="width:100%;justify-content:center;" onclick="handleContact()">
+                <button class="btn-primary" style="width:100%;justify-content:center;" onclick="handleContact()" aria-describedby="contact-note">
                     Send Message
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
                     </svg>
                 </button>
+                <p class="contact-note" id="contact-note">Opens a draft in your email app for you to review and send.</p>
             </div>
         </div>
     </div>
@@ -752,11 +753,11 @@
             </div>
             <div class="faq-item reveal">
                 <button class="faq-question">
-                    How does the contact form work?
+                    What was your contribution to AIRA?
                     <span class="faq-icon">+</span>
                 </button>
                 <div class="faq-answer">
-                    <p>It opens a draft in your email app so you can review and send the message there.</p>
+                    <p>I built AIRA’s CV parser, job matcher, MCQ generator, chatbot, and speech-enabled interview assistant. My teammates handled the frontend and the rest of the backend.</p>
                 </div>
             </div>
         </div>
