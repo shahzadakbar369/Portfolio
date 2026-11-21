@@ -1,6 +1,6 @@
 # Muhammad Shahzad Akbar — Portfolio
 
-> AI Engineer · Full-Stack Developer · LLM Systems · RAG Pipelines · Agentic AI
+> AI and software developer based in Lahore, Pakistan
 
 **Portfolio:** [https://portfolio-zeta-lovat-bjxxhxljlf.vercel.app/](https://portfolio-zeta-lovat-bjxxhxljlf.vercel.app/)  
 **Email:** shahzadakbar369@gmail.com  
@@ -13,7 +13,7 @@
 
 Personal portfolio website built from scratch with vanilla HTML, CSS, and JavaScript — no frameworks, no build tools. Dark theme, purple-violet accent, fully responsive.
 
-Sections: Hero · Who I Am · Skills · Projects · Experience · Certifications (with lightbox) · FAQ · Contact
+The site highlights five projects, an experience timeline, a certificate gallery, and a résumé PDF linked from the navigation. The FAQ covers on-site roles in Lahore and my contribution to AIRA. Each answer can be opened or closed independently. The contact form opens a draft in the visitor’s email app.
 
 ---
 
@@ -22,12 +22,19 @@ Sections: Hero · Who I Am · Skills · Projects · Experience · Certifications
 | Project | Stack | Link |
 |---|---|---|
 | **AIRA** - AI Recruitment Platform (FYP) | React, Node.js, Express, MongoDB, Groq LLaMA 3.3 70B | [GitHub](https://github.com/shehr519/AIRA-FYP) |
-| **CodeForge AI** - PHP-to-Python migration capstone (in development) | Python, FastAPI, React | [GitHub](https://github.com/shahzadakbar369/codeforge-ai/) |
+| **CodeForge AI** - PHP-to-Python migration capstone (in development). I led the team and worked on the backend, parser agent, and workflow orchestration. | Python, FastAPI, React | [GitHub](https://github.com/shahzadakbar369/codeforge-ai/) |
 | **NETSOL Internship Chatbot** - Team prototype | JWT, Redis, Kafka, Grafana | — |
 | **AI Software House Agent** - Multi-agent pipeline | FastAPI, Python, React 19, Groq SDK | [GitHub](https://github.com/shahzadakbar369/AI-Software-House-Agent) |
 | **AI PDF Chatbot Assistant** - Full-stack RAG | FastAPI, FAISS, Tesseract OCR, MongoDB Atlas, React | [GitHub](https://github.com/shahzadakbar369/AI-PDF-Chatbot-Assistant) |
 
 ---
+
+## Experience
+
+- **AI/ML Trainee, NIAI** (Sep–Nov 2026). The program was governed by NETSOL and funded by NAVTTC. Training covered data preparation, machine learning fundamentals, model evaluation, and introductory deep learning and MLOps.
+- **AI/ML Intern, NETSOL Technologies** (Oct 2026). Worked on a team chatbot prototype during a one-month internship that overlapped with the training.
+- **MERN Stack Intern, CodeUpScale** (Jan–Feb 2026).
+- **Web Development Intern, KOT Enterprises** (Jun–Jul 2022).
 
 ## File Structure
 
@@ -37,9 +44,9 @@ Portfolio/
 ├── certifications.html     # Certifications page (backup)
 ├── assets/
 │   ├── css/
-│   │   └── style.css       # All styles
+│   │   └── style.css       # Shared styles
 │   ├── js/
-│   │   └── main.js         # All JS logic
+│   │   └── main.js         # Shared page interactions
 │   └── images/
 │       ├── shahzad_logo.png
 │       ├── Shahzad.png
@@ -65,7 +72,7 @@ Portfolio/
 
 - **HTML5** — semantic structure, no framework
 - **CSS3** — CSS custom properties, grid, flexbox, animations
-- **Vanilla JS** — scroll reveal, FAQ accordion, lightbox, parallax orbs, mailto contact form
+- **Vanilla JS** — mobile navigation, scroll reveals, FAQ toggles, certificate lightbox, and parallax effects
 - **Google Fonts** — Space Grotesk + JetBrains Mono
 - **Deployed on** — Vercel
 
